@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6ff;
+}
+
+.container {
+  width: 60vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.filter-posts {
+  display: flex;
+  margin-top: 30px;
+}
+
+.posts-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-box {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+
+.article-box .post-image {
+  width: 200px;
+  height: 150px;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+
+.article-box ul {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.article-box ul li button{
+  background-color: transparent;
+  color: #ea907a;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  transition: all 300ms;
+}
+
+.article-box ul li button:hover {
+  color: #ccc;
+}
+
+.article-box ul li:nth-child(2) {
+  font-weight: bold;
+  margin-left: -2px;
+}
+
+.article-box .summary-box {
+  background: url(./wave.svg) no-repeat;
+  background-position: left bottom;
+  padding: 5px;
+}
+
+.article-box .votes-summary-box {
+  display: flex;
+}
+
+.article-box .summary-box a {
+  color: #ffcb74;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 2px dashed #ffcb74;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.article-box .summary-box a:hover {
+  color: #4f8a8b;
+}
+
+.article-box .summary-box p{
+  color: #4f8a8b;
+  font-size: 16px;
+  line-height:1.6em;
+  font-weight: bold;
+}
+
+.article-box .summary-box span {
+  color: white;
+  font-weight: bold;
+}
+
+.article-box .summary-box img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 70vw;
+  }
+
+  .filter-posts {
+    flex-flow: column wrap;
+    text-align: center;
+    transition: all 300ms;
+  }
+
+  .filter-posts button{
+    margin: 5px 0 5px 0;
+  }
+
+  .article-box {
+    flex-direction: column;
+  }
+
+  .article-box .post-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-box .votes-summary-box {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 80vw;
+  }
+}
