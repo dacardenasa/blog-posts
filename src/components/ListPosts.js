@@ -12,13 +12,13 @@ export class Posts extends Component {
 
   handleAscOrderClick(){
     this.setState({
-      posts: sortBy(posts, 'Asc')
+      posts: sortBy(this.state.posts, 'Asc')
     });
   }
 
   handleDescOrderClick(){
     this.setState({
-      posts: sortBy(posts, 'Desc')
+      posts: sortBy(this.state.posts, 'Desc')
     });
   }
 
