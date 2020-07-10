@@ -53,7 +53,9 @@ export class Posts extends Component {
         <section className="posts-box">
           {this.state.posts.map( (post, index) => 
             <article className="article-box" key={index}>
-              <img src={post.post_image_url} alt={post.title} className="img-fluid post-image" />
+              <div className="post-img">
+                <img src={post.post_image_url} alt={post.title} className="img-fluid post-image" />
+              </div>
               <div className="votes-summary-box">
                 <ul>
                   <li>
