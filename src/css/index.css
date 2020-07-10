@@ -65,7 +65,7 @@ body {
 }
 
 .article-box .summary-box {
-  background: url(./wave.svg) no-repeat;
+  background: url(../img/wave.svg) no-repeat;
   background-position: left bottom;
   padding: 5px;
 }
